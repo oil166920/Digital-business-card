@@ -1,831 +1,1164 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-  <meta charset="UTF-8">
-
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
+<meta charset="UTF-8">
 
-  <meta
-    name="theme-color"
-    content="#050b16"
-  >
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta
-    name="description"
-    content="ออย โมบายโฟน - ร้านซ่อมมือถือ อำเภอแสวงหา จังหวัดอ่างทอง"
-  >
+<meta name="theme-color" content="#050b16">
 
-  <title>ออย โมบายโฟน | AOI MOBILE PHONE</title>
+<meta name="description"
+content="ออย โมบายโฟน | AOI MOBILE PHONE ร้านซ่อมมือถือ อำเภอแสวงหา จังหวัดอ่างทอง">
 
-  <style>
+<meta property="og:title"
+content="ออย โมบายโฟน | AOI MOBILE PHONE">
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+<meta property="og:description"
+content="ร้านซ่อมมือถือ อำเภอแสวงหา จังหวัดอ่างทอง">
 
-    html {
-      scroll-behavior: smooth;
-    }
+<meta property="og:image"
+content="https://i.ibb.co/xqmBCnM9/DBF876-F2-A1-CA-4-FAE-961-B-04702366741-A.png">
 
-    body {
-      font-family:
-        Arial,
-        "Noto Sans Thai",
-        "Tahoma",
-        sans-serif;
+<meta property="og:type" content="website">
 
-      background:
-        radial-gradient(
-          circle at 50% 0%,
-          #0b3152 0%,
-          #050b16 40%,
-          #02060c 100%
-        );
+<title>ออย โมบายโฟน | AOI MOBILE PHONE</title>
 
-      color: #ffffff;
-      min-height: 100vh;
-    }
+<style>
 
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-    .container {
-      width: 100%;
-      max-width: 540px;
-      margin: auto;
-      padding: 18px;
-    }
+html {
+  scroll-behavior: smooth;
+}
 
-    /* =========================
-       PROFILE
-    ========================= */
+body {
+  font-family:
+    Arial,
+    "Noto Sans Thai",
+    Tahoma,
+    sans-serif;
 
-    .profile {
-      position: relative;
-      overflow: hidden;
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      #0b3152 0%,
+      #050b16 40%,
+      #02060c 100%
+    );
 
-      text-align: center;
+  color: #fff;
+  min-height: 100vh;
+  padding-bottom: 90px;
+}
 
-      padding: 34px 20px 25px;
+a {
+  color: inherit;
+  text-decoration: none;
+}
 
-      border-radius: 30px;
+button {
+  font-family: inherit;
+  border: 0;
+}
 
-      background:
-        linear-gradient(
-          145deg,
-          rgba(10, 30, 52, 0.97),
-          rgba(3, 12, 24, 0.97)
-        );
+/* =========================
+   CONTAINER
+========================= */
 
-      border: 1px solid rgba(52, 169, 255, 0.35);
+.container {
+  width: 100%;
+  max-width: 560px;
+  margin: auto;
+  padding: 18px;
+}
 
-      box-shadow:
-        0 0 50px rgba(0, 140, 255, 0.13),
-        inset 0 0 30px rgba(0, 140, 255, 0.03);
-    }
+/* =========================
+   PROFILE
+========================= */
 
-    .profile::before {
-      content: "";
+.profile {
+  position: relative;
+  overflow: hidden;
 
-      position: absolute;
+  text-align: center;
 
-      width: 240px;
-      height: 240px;
+  padding: 34px 20px 25px;
 
-      top: -130px;
-      left: -80px;
+  border-radius: 30px;
 
-      background: #008cff;
+  background:
+    linear-gradient(
+      145deg,
+      rgba(10,30,52,.97),
+      rgba(3,12,24,.97)
+    );
 
-      filter: blur(100px);
+  border: 1px solid rgba(52,169,255,.35);
 
-      opacity: 0.15;
-    }
+  box-shadow:
+    0 0 50px rgba(0,140,255,.13),
+    inset 0 0 30px rgba(0,140,255,.03);
+}
 
-    .profile::after {
-      content: "";
+.profile::before {
+  content: "";
 
-      position: absolute;
+  position: absolute;
 
-      width: 200px;
-      height: 200px;
+  width: 240px;
+  height: 240px;
 
-      bottom: -130px;
-      right: -80px;
+  top: -130px;
+  left: -80px;
 
-      background: #00d9ff;
+  background: #008cff;
 
-      filter: blur(100px);
+  filter: blur(100px);
 
-      opacity: 0.08;
-    }
+  opacity: .15;
+}
 
-    /* =========================
-       LOGO
-    ========================= */
+.profile::after {
+  content: "";
 
-    .logo {
-      position: relative;
+  position: absolute;
 
-      width: 125px;
-      height: 125px;
+  width: 200px;
+  height: 200px;
 
-      margin: auto;
+  bottom: -130px;
+  right: -80px;
 
-      border-radius: 28px;
+  background: #00d9ff;
 
-      display: flex;
-      align-items: center;
-      justify-content: center;
+  filter: blur(100px);
 
-      background: #061321;
+  opacity: .08;
+}
 
-      border: 2px solid rgba(55, 180, 255, 0.7);
+/* =========================
+   LOGO
+========================= */
 
-      box-shadow:
-        0 0 25px rgba(0, 150, 255, 0.25),
-        0 0 70px rgba(0, 150, 255, 0.08);
+.logo {
+  position: relative;
+  z-index: 2;
 
-      overflow: hidden;
-    }
+  width: 135px;
+  height: 135px;
 
-    .logo img {
-      width: 100%;
-      height: 100%;
+  margin: auto;
 
-      object-fit: contain;
+  border-radius: 30px;
 
-      padding: 8px;
-    }
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    .logo-fallback {
-      font-size: 55px;
-    }
+  background: #061321;
 
-    /* =========================
-       TITLE
-    ========================= */
+  border: 2px solid rgba(55,180,255,.7);
 
-    h1 {
-      position: relative;
+  box-shadow:
+    0 0 25px rgba(0,150,255,.25),
+    0 0 70px rgba(0,150,255,.08);
 
-      margin-top: 20px;
+  overflow: hidden;
+}
 
-      font-size: 30px;
-      font-weight: 800;
+.logo img {
+  width: 100%;
+  height: 100%;
 
-      letter-spacing: 0.3px;
-    }
+  object-fit: contain;
 
-    .english {
-      position: relative;
+  padding: 6px;
+}
 
-      margin-top: 7px;
+/* =========================
+   TITLE
+========================= */
 
-      color: #55baff;
+h1 {
+  position: relative;
+  z-index: 2;
 
-      font-size: 13px;
+  margin-top: 20px;
 
-      letter-spacing: 3px;
-      font-weight: 700;
-    }
+  font-size: 30px;
 
-    .slogan {
-      position: relative;
+  font-weight: 800;
+}
 
-      margin-top: 13px;
+.english {
+  position: relative;
+  z-index: 2;
 
-      color: #d7ecff;
+  margin-top: 7px;
 
-      font-size: 16px;
-    }
+  color: #55baff;
 
-    /* =========================
-       NFC
-    ========================= */
+  font-size: 13px;
 
-    .nfc {
-      position: relative;
+  letter-spacing: 3px;
 
-      margin-top: 22px;
+  font-weight: 700;
+}
 
-      padding: 15px;
+.slogan {
+  position: relative;
+  z-index: 2;
 
-      border-radius: 17px;
+  margin-top: 13px;
 
-      background:
-        linear-gradient(
-          135deg,
-          rgba(0, 130, 255, 0.12),
-          rgba(0, 220, 255, 0.04)
-        );
+  color: #d7ecff;
 
-      border: 1px dashed rgba(60, 184, 255, 0.65);
+  font-size: 16px;
+}
 
-      color: #9bd8ff;
+.tech-line {
+  width: 80px;
+  height: 3px;
 
-      font-size: 13px;
+  margin: 18px auto 0;
 
-      line-height: 1.6;
-    }
+  border-radius: 10px;
 
-    .nfc strong {
-      color: #ffffff;
-    }
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      #00aaff,
+      transparent
+    );
 
-    /* =========================
-       SECTION
-    ========================= */
+  box-shadow:
+    0 0 15px #009dff;
+}
 
-    .section {
-      margin-top: 16px;
+/* =========================
+   NFC
+========================= */
 
-      padding: 21px;
+.nfc {
+  position: relative;
+  z-index: 2;
 
-      border-radius: 22px;
+  margin-top: 22px;
 
-      background:
-        rgba(6, 20, 34, 0.94);
+  padding: 15px;
 
-      border: 1px solid rgba(28, 86, 125, 0.55);
+  border-radius: 17px;
 
-      box-shadow:
-        0 10px 35px rgba(0, 0, 0, 0.18);
-    }
+  background:
+    linear-gradient(
+      135deg,
+      rgba(0,130,255,.12),
+      rgba(0,220,255,.04)
+    );
 
-    .section h2 {
-      margin-bottom: 14px;
+  border: 1px dashed rgba(60,184,255,.65);
 
-      color: #62c0ff;
+  color: #9bd8ff;
 
-      font-size: 19px;
-    }
+  font-size: 13px;
 
-    .section p {
-      color: #d2e1ed;
+  line-height: 1.6;
+}
 
-      font-size: 14px;
+.nfc strong {
+  color: #fff;
+}
 
-      line-height: 1.8;
-    }
+/* =========================
+   SECTION
+========================= */
 
-    /* =========================
-       SERVICES
-    ========================= */
+.section {
+  margin-top: 16px;
 
-    .services {
-      display: grid;
+  padding: 21px;
 
-      gap: 10px;
-    }
+  border-radius: 22px;
 
-    .service {
-      padding: 14px;
+  background:
+    rgba(6,20,34,.94);
 
-      border-radius: 14px;
+  border: 1px solid rgba(28,86,125,.55);
 
-      background:
-        linear-gradient(
-          135deg,
-          #071a2b,
-          #061321
-        );
+  box-shadow:
+    0 10px 35px rgba(0,0,0,.18);
+}
 
-      border: 1px solid #123b5d;
+.section h2 {
+  margin-bottom: 14px;
 
-      color: #e6f3ff;
+  color: #62c0ff;
 
-      font-size: 14px;
+  font-size: 19px;
+}
 
-      line-height: 1.6;
+.section p {
+  color: #d2e1ed;
 
-      transition: 0.2s;
-    }
+  font-size: 14px;
 
-    .service:hover {
-      transform: translateY(-2px);
+  line-height: 1.8;
+}
 
-      border-color: #238ed0;
+/* =========================
+   SERVICES
+========================= */
 
-      box-shadow:
-        0 8px 25px rgba(0, 140, 255, 0.08);
-    }
+.services {
+  display: grid;
+  gap: 10px;
+}
 
-    /* =========================
-       BUTTONS
-    ========================= */
+.service {
+  padding: 14px;
 
-    .buttons {
-      display: grid;
+  border-radius: 14px;
 
-      gap: 10px;
-    }
+  background:
+    linear-gradient(
+      135deg,
+      #071a2b,
+      #061321
+    );
 
-    .button {
-      display: block;
+  border: 1px solid #123b5d;
 
-      width: 100%;
+  color: #e6f3ff;
 
-      padding: 15px;
+  font-size: 14px;
 
-      border-radius: 15px;
+  line-height: 1.6;
 
-      text-align: center;
+  transition: .2s;
+}
 
-      font-size: 15px;
+.service:hover {
+  transform: translateY(-2px);
 
-      font-weight: 700;
+  border-color: #238ed0;
 
-      background:
-        linear-gradient(
-          135deg,
-          #087cff,
-          #00b7ff
-        );
+  box-shadow:
+    0 8px 25px rgba(0,140,255,.08);
+}
 
-      box-shadow:
-        0 8px 25px rgba(0, 130, 255, 0.15);
+/* =========================
+   BUTTONS
+========================= */
 
-      transition: 0.2s;
-    }
+.buttons {
+  display: grid;
+  gap: 10px;
+}
 
-    .button:hover {
-      transform: translateY(-2px);
-    }
+.button {
+  display: flex;
 
-    .button.secondary {
-      background: #0a2034;
+  align-items: center;
+  justify-content: center;
 
-      border: 1px solid #185078;
+  width: 100%;
 
-      box-shadow: none;
-    }
+  min-height: 52px;
 
-    .button.facebook {
-      background:
-        linear-gradient(
-          135deg,
-          #1877f2,
-          #0d5dcc
-        );
-    }
+  padding: 15px;
 
-    .button.map {
-      background:
-        linear-gradient(
-          135deg,
-          #11a85b,
-          #087a42
-        );
-    }
+  border-radius: 15px;
 
-    /* =========================
-       INFO
-    ========================= */
+  text-align: center;
 
-    .info {
-      display: grid;
+  font-size: 15px;
 
-      gap: 10px;
-    }
+  font-weight: 700;
 
-    .info-box {
-      padding: 13px;
+  background:
+    linear-gradient(
+      135deg,
+      #087cff,
+      #00b7ff
+    );
 
-      border-radius: 13px;
+  color: #fff;
 
-      background: #071827;
+  box-shadow:
+    0 8px 25px rgba(0,130,255,.15);
 
-      border: 1px solid #123650;
-    }
+  transition: .2s;
 
-    .label {
-      margin-bottom: 4px;
+  cursor: pointer;
+}
 
-      color: #59baff;
+.button:hover {
+  transform: translateY(-2px);
+}
 
-      font-size: 12px;
-    }
+.button:active {
+  transform: scale(.98);
+}
 
-    .value {
-      color: #ffffff;
+.button.facebook {
+  background:
+    linear-gradient(
+      135deg,
+      #1877f2,
+      #0d5dcc
+    );
+}
 
-      font-size: 14px;
+.button.map {
+  background:
+    linear-gradient(
+      135deg,
+      #11a85b,
+      #087a42
+    );
+}
 
-      line-height: 1.5;
-    }
+.button.copy {
+  background:
+    linear-gradient(
+      135deg,
+      #694cff,
+      #9b55ff
+    );
+}
 
-    /* =========================
-       FOOTER
-    ========================= */
+.button.secondary {
+  background: #0a2034;
 
-    footer {
-      text-align: center;
+  border: 1px solid #185078;
 
-      padding: 28px 10px 15px;
+  box-shadow: none;
+}
 
-      color: #668198;
+/* =========================
+   INFO
+========================= */
 
-      font-size: 12px;
+.info {
+  display: grid;
+  gap: 10px;
+}
 
-      line-height: 1.8;
-    }
+.info-box {
+  padding: 13px;
 
-    .brand-footer {
-      color: #8fcfff;
+  border-radius: 13px;
 
-      font-weight: bold;
-    }
+  background: #071827;
 
-    /* =========================
-       TOP GLOW
-    ========================= */
+  border: 1px solid #123650;
+}
 
-    .tech-line {
-      width: 80px;
-      height: 3px;
+.label {
+  margin-bottom: 4px;
 
-      margin: 18px auto 0;
+  color: #59baff;
 
-      border-radius: 10px;
+  font-size: 12px;
+}
 
-      background:
-        linear-gradient(
-          90deg,
-          transparent,
-          #00aaff,
-          transparent
-        );
+.value {
+  color: #fff;
 
-      box-shadow:
-        0 0 15px #009dff;
-    }
+  font-size: 14px;
 
-  </style>
+  line-height: 1.5;
+}
+
+/* =========================
+   SHARE
+========================= */
+
+.share-box {
+  margin-top: 16px;
+
+  padding: 16px;
+
+  border-radius: 18px;
+
+  text-align: center;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(0,140,255,.08),
+      rgba(0,220,255,.03)
+    );
+
+  border: 1px solid rgba(53,157,220,.35);
+}
+
+.share-box p {
+  margin-bottom: 12px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  text-align: center;
+
+  padding: 28px 10px 15px;
+
+  color: #668198;
+
+  font-size: 12px;
+
+  line-height: 1.8;
+}
+
+.brand-footer {
+  color: #8fcfff;
+
+  font-weight: bold;
+}
+
+/* =========================
+   FLOATING BAR
+========================= */
+
+.floating-bar {
+  position: fixed;
+
+  left: 50%;
+  bottom: 12px;
+
+  transform: translateX(-50%);
+
+  z-index: 999;
+
+  width: calc(100% - 28px);
+
+  max-width: 530px;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 7px;
+
+  padding: 8px;
+
+  border-radius: 20px;
+
+  background:
+    rgba(3,13,24,.94);
+
+  backdrop-filter: blur(18px);
+
+  -webkit-backdrop-filter: blur(18px);
+
+  border:
+    1px solid rgba(65,164,220,.35);
+
+  box-shadow:
+    0 10px 40px rgba(0,0,0,.45);
+}
+
+.float-btn {
+  min-height: 46px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 13px;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  background: #0a2034;
+
+  border: 1px solid #153d59;
+}
+
+.float-btn.phone {
+  background: #087cff;
+}
+
+.float-btn.facebook {
+  background: #1877f2;
+}
+
+.float-btn.map {
+  background: #0b9c58;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width:380px) {
+
+  .container {
+    padding: 12px;
+  }
+
+  .profile {
+    padding: 28px 15px 22px;
+  }
+
+  .logo {
+    width: 110px;
+    height: 110px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  .section {
+    padding: 17px;
+  }
+
+  .floating-bar {
+    width: calc(100% - 20px);
+  }
+
+}
+
+</style>
 </head>
 
 <body>
 
-  <main class="container">
+<main class="container">
 
-    <!-- =========================
-         PROFILE
-    ========================= -->
+<!-- =========================
+     PROFILE
+========================= -->
 
-    <section class="profile">
+<section class="profile">
 
-      <div class="logo">
+  <div class="logo">
 
-        <!--
-          LOGO
-          ใส่ Direct Image URL ของโลโก้จาก ImgBB ตรง src
-        -->
+    <img
+      src="https://i.ibb.co/xqmBCnM9/DBF876-F2-A1-CA-4-FAE-961-B-04702366741-A.png"
+      alt="โลโก้ ออย โมบายโฟน"
+    >
 
-        <img
-          src="https://ibb.co/gZvfj0Dq"
-          alt="ออย โมบายโฟน"
-          onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
-        >
+  </div>
 
-        <span
-          class="logo-fallback"
-          style="display:none;"
-        >
-          📱
-        </span>
+  <h1>
+    ออย โมบายโฟน
+  </h1>
 
+  <div class="english">
+    AOI MOBILE PHONE
+  </div>
+
+  <div class="slogan">
+    🔧 ซ่อมไว ใส่ใจทุกเครื่อง
+  </div>
+
+  <div class="tech-line"></div>
+
+  <div class="nfc">
+
+    📲
+    <strong>
+      NFC DIGITAL BUSINESS CARD
+    </strong>
+
+    <br>
+
+    แตะโทรศัพท์เพื่อดูข้อมูลร้าน
+    และติดต่อ ออย โมบายโฟน ได้ทันที
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section class="section">
+
+  <h2>
+    🏪 เกี่ยวกับร้าน
+  </h2>
+
+  <p>
+
+    <strong>
+      ออย โมบายโฟน
+    </strong>
+
+    ร้านซ่อมมือถือและบริการด้านอุปกรณ์ไอที
+    ให้บริการตรวจเช็กและซ่อมมือถือหลากหลายอาการ
+
+    <br><br>
+
+    เน้นการบริการที่ใส่ใจลูกค้า
+    ตรวจสอบอาการก่อนซ่อม
+    พร้อมแจ้งรายละเอียดและค่าใช้จ่าย
+    ก่อนดำเนินการซ่อม
+
+  </p>
+
+</section>
+
+
+<!-- =========================
+     SERVICES
+========================= -->
+
+<section class="section">
+
+  <h2>
+    🛠️ บริการของร้าน
+  </h2>
+
+  <div class="services">
+
+    <div class="service">
+      📱 <strong>ซ่อมมือถือ</strong><br>
+      ตรวจเช็กอาการ เครื่องเปิดไม่ติด
+      เครื่องค้าง รีสตาร์ต
+      และปัญหาการใช้งานทั่วไป
+    </div>
+
+    <div class="service">
+      🖥️ <strong>เปลี่ยนหน้าจอ</strong><br>
+      ตรวจสอบหน้าจอแตก จอเสีย
+      และระบบทัชสกรีน
+    </div>
+
+    <div class="service">
+      🔋 <strong>เปลี่ยนแบตเตอรี่</strong><br>
+      ตรวจสอบแบตเสื่อม แบตหมดไว
+      และปัญหาเกี่ยวกับแบตเตอรี่
+    </div>
+
+    <div class="service">
+      🔌 <strong>ระบบชาร์จ</strong><br>
+      ตรวจสอบชาร์จไม่เข้า
+      และปัญหาพอร์ตชาร์จ
+    </div>
+
+    <div class="service">
+      📷 <strong>ซ่อมกล้อง</strong><br>
+      ตรวจสอบกล้องหน้า กล้องหลัง
+      และปัญหาภาพผิดปกติ
+    </div>
+
+    <div class="service">
+      🔊 <strong>ระบบเสียง</strong><br>
+      ตรวจสอบลำโพง ไมโครโฟน
+      และระบบเสียง
+    </div>
+
+    <div class="service">
+      💻 <strong>ซอฟต์แวร์</strong><br>
+      แก้ไขปัญหาระบบ อัปเดตระบบ
+      และตรวจสอบเครื่องค้าง
+    </div>
+
+    <div class="service">
+      🛡️ <strong>ตรวจเช็กเครื่อง</strong><br>
+      ตรวจสอบอาการเบื้องต้น
+      และประเมินงานซ่อมก่อนดำเนินการ
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section class="section">
+
+  <h2>
+    📞 ติดต่อร้าน
+  </h2>
+
+  <div class="buttons">
+
+    <a
+      class="button"
+      href="tel:0637695934"
+    >
+      📞 โทร 063-769-5934
+    </a>
+
+    <button
+      class="button copy"
+      onclick="copyPhone()"
+    >
+      📋 คัดลอกเบอร์โทร
+    </button>
+
+    <a
+      class="button facebook"
+      href="https://www.facebook.com/xxy.wirburus.chud.kuphay"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      📘 Facebook : ออย โมบายโฟน
+    </a>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     LOCATION
+========================= -->
+
+<section class="section">
+
+  <h2>
+    📍 ที่ตั้งร้าน
+  </h2>
+
+  <div class="info">
+
+    <div class="info-box">
+
+      <div class="label">
+        จังหวัด
       </div>
 
-      <h1>
-        ออย โมบายโฟน
-      </h1>
-
-      <div class="english">
-        AOI MOBILE PHONE
+      <div class="value">
+        อ่างทอง
       </div>
 
-      <div class="slogan">
-        🔧 ซ่อมไว ใส่ใจทุกเครื่อง
+    </div>
+
+    <div class="info-box">
+
+      <div class="label">
+        อำเภอ
       </div>
 
-      <div class="tech-line"></div>
-
-      <div class="nfc">
-
-        📲 <strong>NFC DIGITAL BUSINESS CARD</strong>
-
-        <br>
-
-        แตะโทรศัพท์เพื่อดูข้อมูลร้าน
-        และติดต่อ ออย โมบายโฟน ได้ทันที
-
+      <div class="value">
+        แสวงหา
       </div>
 
-    </section>
+    </div>
 
+    <div class="info-box">
 
-    <!-- =========================
-         ABOUT
-    ========================= -->
-
-    <section class="section">
-
-      <h2>
-        🏪 เกี่ยวกับร้าน
-      </h2>
-
-      <p>
-
-        ออย โมบายโฟน
-        ร้านซ่อมมือถือและบริการด้านอุปกรณ์ไอที
-        ให้บริการตรวจเช็กและซ่อมมือถือหลากหลายอาการ
-
-        <br><br>
-
-        เน้นการบริการที่ใส่ใจลูกค้า
-        ตรวจสอบอาการก่อนซ่อม
-        พร้อมแจ้งรายละเอียดและค่าใช้จ่าย
-        ก่อนดำเนินการซ่อม
-
-      </p>
-
-    </section>
-
-
-    <!-- =========================
-         SERVICES
-    ========================= -->
-
-    <section class="section">
-
-      <h2>
-        🛠️ บริการของร้าน
-      </h2>
-
-      <div class="services">
-
-        <div class="service">
-          📱 <strong>ซ่อมมือถือ</strong><br>
-          ตรวจเช็กอาการ เครื่องเปิดไม่ติด เครื่องค้าง
-          รีสตาร์ต และปัญหาการใช้งานทั่วไป
-        </div>
-
-        <div class="service">
-          🖥️ <strong>เปลี่ยนหน้าจอ</strong><br>
-          ตรวจสอบหน้าจอแตก จอเสีย
-          และระบบทัชสกรีน
-        </div>
-
-        <div class="service">
-          🔋 <strong>เปลี่ยนแบตเตอรี่</strong><br>
-          ตรวจสอบแบตเสื่อม แบตหมดไว
-          และปัญหาเกี่ยวกับแบตเตอรี่
-        </div>
-
-        <div class="service">
-          🔌 <strong>ระบบชาร์จ</strong><br>
-          ตรวจสอบชาร์จไม่เข้า
-          และปัญหาพอร์ตชาร์จ
-        </div>
-
-        <div class="service">
-          📷 <strong>ซ่อมกล้อง</strong><br>
-          ตรวจสอบกล้องหน้า กล้องหลัง
-          และปัญหาภาพผิดปกติ
-        </div>
-
-        <div class="service">
-          🔊 <strong>ระบบเสียง</strong><br>
-          ตรวจสอบลำโพง ไมโครโฟน
-          และระบบเสียง
-        </div>
-
-        <div class="service">
-          💻 <strong>ซอฟต์แวร์</strong><br>
-          แก้ไขปัญหาระบบ อัปเดตระบบ
-          และตรวจสอบเครื่องค้าง
-        </div>
-
+      <div class="label">
+        ตำบล
       </div>
 
-    </section>
-
-
-    <!-- =========================
-         CONTACT
-    ========================= -->
-
-    <section class="section">
-
-      <h2>
-        📞 ติดต่อร้าน
-      </h2>
-
-      <div class="buttons">
-
-        <!-- PHONE -->
-
-        <a
-          class="button"
-          href="tel:0637695934"
-        >
-          📞 โทร 063-769-5934
-        </a>
-
-
-        <!-- FACEBOOK -->
-
-        <a
-          class="button facebook"
-          href="https://www.facebook.com/xxy.wirburus.chud.kuphay"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          📘 Facebook : ออย โมบายโฟน
-        </a>
-
+      <div class="value">
+        แสวงหา
       </div>
 
-    </section>
+    </div>
+
+  </div>
+
+  <br>
+
+  <a
+    class="button map"
+    href="https://www.google.com/maps/search/?api=1&query=ตำบลแสวงหา%20อำเภอแสวงหา%20จังหวัดอ่างทอง"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    🗺️ เปิด Google Maps
+  </a>
+
+</section>
 
 
-    <!-- =========================
-         LOCATION
-    ========================= -->
+<!-- =========================
+     OPENING HOURS
+========================= -->
 
-    <section class="section">
+<section class="section">
 
-      <h2>
-        📍 ที่ตั้งร้าน
-      </h2>
+  <h2>
+    🕐 เวลาให้บริการ
+  </h2>
 
-      <div class="info">
+  <p>
 
-        <div class="info-box">
+    กรุณาสอบถามเวลาเปิด-ปิดร้าน
+    และคิวงานซ่อมผ่านทางโทรศัพท์
+    หรือ Facebook ของร้าน
 
-          <div class="label">
-            จังหวัด
-          </div>
+  </p>
 
-          <div class="value">
-            อ่างทอง
-          </div>
-
-        </div>
+</section>
 
 
-        <div class="info-box">
+<!-- =========================
+     NFC
+========================= -->
 
-          <div class="label">
-            อำเภอ
-          </div>
+<section class="section">
 
-          <div class="value">
-            แสวงหา
-          </div>
+  <h2>
+    📲 แตะ NFC เพื่อเชื่อมต่อ
+  </h2>
 
-        </div>
+  <p>
 
+    แตะโทรศัพท์กับ NFC Card
+    เพื่อเข้าถึงข้อมูลร้าน
+    ติดต่อร้าน ดูตำแหน่ง
+    และติดตามช่องทางออนไลน์
 
-        <div class="info-box">
+  </p>
 
-          <div class="label">
-            ตำบล
-          </div>
+  <br>
 
-          <div class="value">
-            แสวงหา
-          </div>
+  <div class="buttons">
 
-        </div>
+    <a
+      class="button"
+      href="tel:0637695934"
+    >
+      📞 โทรหาร้าน
+    </a>
 
-      </div>
+    <a
+      class="button facebook"
+      href="https://www.facebook.com/xxy.wirburus.chud.kuphay"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      📘 Facebook
+    </a>
 
-      <br>
+    <a
+      class="button map"
+      href="https://www.google.com/maps/search/?api=1&query=ตำบลแสวงหา%20อำเภอแสวงหา%20จังหวัดอ่างทอง"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      📍 นำทางไปร้าน
+    </a>
 
-      <!-- GOOGLE MAPS -->
+  </div>
 
-      <a
-        class="button map"
-        href="https://www.google.com/maps/search/?api=1&query=ตำบลแสวงหา%20อำเภอแสวงหา%20จังหวัดอ่างทอง"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        🗺️ เปิด Google Maps
-      </a>
-
-    </section>
-
-
-    <!-- =========================
-         OPENING HOURS
-    ========================= -->
-
-    <section class="section">
-
-      <h2>
-        🕐 เวลาให้บริการ
-      </h2>
-
-      <p>
-        กรุณาสอบถามเวลาเปิด-ปิดร้าน
-        และคิวงานซ่อมผ่านทางโทรศัพท์
-      </p>
-
-    </section>
+</section>
 
 
-    <!-- =========================
-         NFC CTA
-    ========================= -->
+<!-- =========================
+     SHARE
+========================= -->
 
-    <section class="section">
+<section class="section">
 
-      <h2>
-        📲 แตะ NFC เพื่อเชื่อมต่อ
-      </h2>
+  <h2>
+    📤 แชร์ร้านให้เพื่อน
+  </h2>
 
-      <p>
-        แตะโทรศัพท์กับ NFC Card
-        เพื่อเข้าถึงข้อมูลร้าน
-        ติดต่อร้าน ดูตำแหน่ง
-        และติดตามช่องทางออนไลน์
-      </p>
+  <div class="share-box">
 
-      <br>
+    <p>
+      แชร์หน้าโปรไฟล์ร้าน
+      ให้ลูกค้าหรือเพื่อนของคุณ
+    </p>
 
-      <div class="buttons">
+    <button
+      class="button secondary"
+      onclick="sharePage()"
+    >
+      📤 แชร์ ออย โมบายโฟน
+    </button>
 
-        <a
-          class="button"
-          href="tel:0637695934"
-        >
-          📞 โทรหาร้าน
-        </a>
+  </div>
 
-        <a
-          class="button facebook"
-          href="https://www.facebook.com/xxy.wirburus.chud.kuphay"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          📘 Facebook
-        </a>
-
-        <a
-          class="button map"
-          href="https://www.google.com/maps/search/?api=1&query=ตำบลแสวงหา%20อำเภอแสวงหา%20จังหวัดอ่างทอง"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          📍 นำทางไปร้าน
-        </a>
-
-      </div>
-
-    </section>
+</section>
 
 
-    <!-- =========================
-         FOOTER
-    ========================= -->
+<!-- =========================
+     FOOTER
+========================= -->
 
-    <footer>
+<footer>
 
-      <div class="brand-footer">
-        ออย โมบายโฟน
-      </div>
+  <div class="brand-footer">
+    ออย โมบายโฟน
+  </div>
 
-      AOI MOBILE PHONE
+  AOI MOBILE PHONE
 
-      <br>
+  <br>
 
-      “ซ่อมไว ใส่ใจทุกเครื่อง”
+  “ซ่อมไว ใส่ใจทุกเครื่อง”
 
-      <br><br>
+  <br><br>
 
-      📞 063-769-5934
+  📞 063-769-5934
 
-      <br>
+  <br>
 
-      📍 อ่างทอง • อำเภอแสวงหา • ตำบลแสวงหา
+  📍 อ่างทอง • อำเภอแสวงหา • ตำบลแสวงหา
 
-      <br><br>
+  <br><br>
 
-      © 2026 AOI MOBILE PHONE
-      <br>
-      All Rights Reserved.
+  © 2026 AOI MOBILE PHONE
 
-    </footer>
+  <br>
 
-  </main>
+  All Rights Reserved.
+
+</footer>
+
+</main>
+
+
+<!-- =========================
+     FLOATING BAR
+========================= -->
+
+<nav class="floating-bar">
+
+  <a
+    class="float-btn phone"
+    href="tel:0637695934"
+  >
+    📞 โทร
+  </a>
+
+  <a
+    class="float-btn facebook"
+    href="https://www.facebook.com/xxy.wirburus.chud.kuphay"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    📘 Facebook
+  </a>
+
+  <a
+    class="float-btn map"
+    href="https://www.google.com/maps/search/?api=1&query=ตำบลแสวงหา%20อำเภอแสวงหา%20จังหวัดอ่างทอง"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    📍 แผนที่
+  </a>
+
+</nav>
+
+
+<script>
+
+/* =========================
+   COPY PHONE
+========================= */
+
+function copyPhone() {
+
+  const phone = "0637695934";
+
+  if (
+    navigator.clipboard &&
+    window.isSecureContext
+  ) {
+
+    navigator.clipboard
+      .writeText(phone)
+      .then(() => {
+
+        alert(
+          "คัดลอกเบอร์ 063-769-5934 แล้วครับ"
+        );
+
+      });
+
+  } else {
+
+    const input =
+      document.createElement("input");
+
+    input.value = phone;
+
+    document.body.appendChild(input);
+
+    input.select();
+
+    document.execCommand("copy");
+
+    input.remove();
+
+    alert(
+      "คัดลอกเบอร์ 063-769-5934 แล้วครับ"
+    );
+
+  }
+
+}
+
+
+/* =========================
+   SHARE
+========================= */
+
+async function sharePage() {
+
+  const shareData = {
+
+    title:
+      "ออย โมบายโฟน | AOI MOBILE PHONE",
+
+    text:
+      "ออย โมบายโฟน 🔧 ร้านซ่อมมือถือ อำเภอแสวงหา จังหวัดอ่างทอง",
+
+    url:
+      window.location.href
+
+  };
+
+  try {
+
+    if (navigator.share) {
+
+      await navigator.share(
+        shareData
+      );
+
+    } else {
+
+      await navigator.clipboard.writeText(
+        window.location.href
+      );
+
+      alert(
+        "คัดลอกลิงก์เว็บไซต์แล้วครับ"
+      );
+
+    }
+
+  } catch (error) {
+
+    console.log(
+      "ยกเลิกการแชร์"
+    );
+
+  }
+
+}
+
+</script>
 
 </body>
 </html>
